@@ -12,7 +12,7 @@ public class Movenjump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (body.velocity.y == 0 && Input.GetKeyDown (KeyCode.Space)) {
 			body.velocity += new Vector2 (0, 5);
 		}
 
