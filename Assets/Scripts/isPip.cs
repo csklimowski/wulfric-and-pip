@@ -35,7 +35,13 @@ public class isPip : MonoBehaviour {
         if (col.gameObject.tag == "water")
         {
             body.velocity += new Vector2(0, 5);
+            body.gravityScale = 0;
         }
+    }
+    
+    void OnTriggerExit2D(Collider2D col)
+    {
+        body.gravityScale = 1;
     }
 
 }

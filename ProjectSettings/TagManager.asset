@@ -9,6 +9,7 @@ TagManager:
   - Pip
   - Enemy
   - Box
+  - Bullet
   layers:
   - Default
   - TransparentFX
