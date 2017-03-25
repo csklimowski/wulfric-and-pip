@@ -15,21 +15,15 @@ public class isPip : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (body.velocity.y == 0 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
+		if (body.velocity.y == 0 && Input.GetButtonDown("Pip Jump")) {
             body.velocity += new Vector2(0, 5);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
+		if (Input.GetAxis("Pip Move") == -1) {
             body.velocity = new Vector2(-2, body.velocity.y);
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
+        } else if (Input.GetAxis("Pip Move") == 1) {
             body.velocity = new Vector2(2, body.velocity.y);
-        }
-        else
-        {
+		} else {
             body.velocity = new Vector2(0, body.velocity.y);
         }
     }

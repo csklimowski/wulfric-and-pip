@@ -96,6 +96,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1757640643397878, guid: 4c9bd83f0b987b94f9bcc2ea1cb9a697,
     type: 2}
   m_PrefabInternal: {fileID: 1507633943}
+--- !u!114 &850997278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 850997272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98138410c5148ad49bce124547e60169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &858928871
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +203,6 @@ GameObject:
   - component: {fileID: 958425633}
   - component: {fileID: 958425632}
   - component: {fileID: 958425631}
-  - component: {fileID: 958425630}
   - component: {fileID: 958425629}
   m_Layer: 0
   m_Name: Square
@@ -216,18 +226,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!114 &958425630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114066667382868300, guid: d9d966e66f04ace43b65afaeb900692b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 958425628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &958425631
 Rigidbody2D:
   serializedVersion: 4
@@ -343,7 +341,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114332693068273390, guid: 4c9bd83f0b987b94f9bcc2ea1cb9a697, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4c9bd83f0b987b94f9bcc2ea1cb9a697, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1576411883
@@ -498,7 +497,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2086780161}
   - component: {fileID: 2086780160}
-  - component: {fileID: 2086780162}
   - component: {fileID: 2086780164}
   - component: {fileID: 2086780163}
   - component: {fileID: 2086780165}
@@ -557,17 +555,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2086780162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2086780159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e9fee6a5de970e4eaccec28d5ccafc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2086780163
 BoxCollider2D:
   m_ObjectHideFlags: 0
