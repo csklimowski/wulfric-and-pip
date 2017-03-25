@@ -116,7 +116,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -143,11 +143,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4660150479099312, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.4253747
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 4660150479099312, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.2718446
+      value: 3.76
       objectReference: {fileID: 0}
     - target: {fileID: 4660150479099312, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
       propertyPath: m_LocalPosition.z
@@ -171,7 +171,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4660150479099312, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114371890383821242, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
@@ -289,11 +289,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4161862392009458, guid: b197f9eadec12744e9cf136d25f13574, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.068371
+      value: -4.19
       objectReference: {fileID: 0}
     - target: {fileID: 4161862392009458, guid: b197f9eadec12744e9cf136d25f13574, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.88065535
+      value: 3.82
       objectReference: {fileID: 0}
     - target: {fileID: 4161862392009458, guid: b197f9eadec12744e9cf136d25f13574, type: 2}
       propertyPath: m_LocalPosition.z
