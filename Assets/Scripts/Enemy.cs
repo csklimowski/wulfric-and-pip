@@ -24,18 +24,12 @@ public class Enemy : MonoBehaviour {
             }
             if(knockedOut == true)
             {
-                StartCoroutine(wakeUp());
+                yield return new WaitForSeconds(10);
                 knockedOut = false;
-                yield return new WaitForSeconds(0);
             }
             yield return new WaitForSeconds(3);
         }
 	}
-
-    IEnumerator wakeUp()
-    {
-        yield return new WaitForSeconds(10);
-    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -43,7 +37,7 @@ public class Enemy : MonoBehaviour {
         {
             knockedOut = true;
         }
-        if (col.gameObject.tag == "Pip" && Input.GetKey(KeyCode.Space) && knockedOut == true)
+        if (col.gameObject.tag == "Pip")
         {
             DestroyObject(gameObject);
         }
