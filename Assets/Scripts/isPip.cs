@@ -6,6 +6,7 @@ public class isPip : MonoBehaviour {
 
     private Rigidbody2D body;
     private BoxCollider2D myCollider;
+	public SwitchScript lever;
     // Use this for initialization
     void Start()
     {
@@ -16,7 +17,7 @@ public class isPip : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         transform.gameObject.tag = "Pip";
-        if (body.velocity.y == 0 && Input.GetButtonDown("Wulfric Jump"))
+        if (body.velocity.y == 0 && Input.GetButtonDown("Pip Jump"))
         {
             body.velocity += new Vector2(0, 5);
         }
@@ -30,10 +31,16 @@ public class isPip : MonoBehaviour {
             body.velocity = new Vector2(2, body.velocity.y);
         }
 
-        if (Input.GetButtonDown("Pip stab"))
+        if (Input.GetButtonDown("Pip Stab"))
         {
             transform.gameObject.tag = "kill";
         }
+
+		if (Input.GetButtonDown ("Pip Switch")) {
+			if (myCollider.bounds.Intersects (lever.GetComponent<BoxCollider2D> ().bounds)) {
+				lever.door.open = !lever.door.open;
+			}
+		}
     }
 
     void OnTriggerEnter2D(Collider2D col)
