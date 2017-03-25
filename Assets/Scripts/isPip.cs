@@ -15,6 +15,7 @@ public class isPip : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        transform.gameObject.tag = "Pip";
         if (body.velocity.y == 0 && Input.GetKeyDown(KeyCode.UpArrow))
         {
             body.velocity += new Vector2(0, 5);
@@ -27,10 +28,6 @@ public class isPip : MonoBehaviour {
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             body.velocity = new Vector2(2, body.velocity.y);
-        }
-        else
-        {
-            body.velocity = new Vector2(0, body.velocity.y);
         }
     }
 

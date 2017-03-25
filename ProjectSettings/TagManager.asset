@@ -11,6 +11,7 @@ TagManager:
   - Box
   - Bullet
   - fan
+  - kill
   layers:
   - Default
   - TransparentFX
@@ -20,11 +21,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 'Pip '
+  - Box
+  - Wulfric
+  - 'enemy '
+  - ground
   - 
   - 
   - 
