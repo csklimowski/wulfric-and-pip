@@ -29,6 +29,11 @@ public class isPip : MonoBehaviour {
         {
             body.velocity = new Vector2(2, body.velocity.y);
         }
+
+        if (Input.GetButtonDown("Pip stab"))
+        {
+            transform.gameObject.tag = "kill";
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
