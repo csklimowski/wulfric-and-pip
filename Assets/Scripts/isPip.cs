@@ -7,6 +7,8 @@ public class isPip : MonoBehaviour {
     private Rigidbody2D body;
     private BoxCollider2D myCollider;
 	public SwitchScript lever;
+    public GameObject enemy;
+
     // Use this for initialization
     void Start()
     {
@@ -31,16 +33,19 @@ public class isPip : MonoBehaviour {
             body.velocity = new Vector2(2, body.velocity.y);
         }
 
-        if (Input.GetButtonDown("Pip Stab"))
-        {
-            transform.gameObject.tag = "kill";
-        }
-
 		if (Input.GetButtonDown ("Pip Switch")) {
 			if (myCollider.bounds.Intersects (lever.GetComponent<BoxCollider2D> ().bounds)) {
 				lever.door.open = !lever.door.open;
 			}
 		}
+
+        if (Input.GetButtonDown("Pip Stab"))
+        {
+            if (myCollider.bounds.Intersects(enemy.GetComponent<BoxCollider2D>().bounds))
+            {
+                DestroyObject(enemy.gameObject);
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
