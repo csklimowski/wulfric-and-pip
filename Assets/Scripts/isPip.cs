@@ -5,11 +5,13 @@ using UnityEngine;
 public class isPip : MonoBehaviour {
 
     private Rigidbody2D body;
-    public GameObject Target;
+    private BoxCollider2D collider;
+    
     // Use this for initialization
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        collider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -31,7 +33,7 @@ public class isPip : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        while(col.gameObject.tag == "water")
+        if (col.gameObject.tag == "water")
         {
             body.velocity += new Vector2(0, 5);
         }
