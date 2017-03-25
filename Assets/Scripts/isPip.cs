@@ -5,13 +5,12 @@ using UnityEngine;
 public class isPip : MonoBehaviour {
 
     private Rigidbody2D body;
-    private BoxCollider2D collider;
-    
+    private BoxCollider2D myCollider;
     // Use this for initialization
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        myCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame

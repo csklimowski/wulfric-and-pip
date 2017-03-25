@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - water
+  - Wulfric
+  - Pip
+  - Enemy
+  - Box
   layers:
   - Default
   - TransparentFX
