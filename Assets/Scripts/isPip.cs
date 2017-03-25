@@ -28,6 +28,10 @@ public class isPip : MonoBehaviour {
         {
             body.velocity = new Vector2(2, body.velocity.y);
         }
+        else
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -35,7 +39,16 @@ public class isPip : MonoBehaviour {
         if (col.gameObject.tag == "water")
         {
             body.velocity += new Vector2(0, 5);
-            body.gravityScale = 0;
+            body.gravityScale = -1;
+        }
+        if(col.gameObject.tag == "fan")
+        {
+            body.velocity += new Vector2(0, 10);
+            body.gravityScale = -1;
+        }
+        if(col.gameObject.tag == "Bullet")
+        {
+            DestroyObject(gameObject);
         }
     }
     

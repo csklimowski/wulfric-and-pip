@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Box
   - Bullet
+  - fan
   layers:
   - Default
   - TransparentFX
