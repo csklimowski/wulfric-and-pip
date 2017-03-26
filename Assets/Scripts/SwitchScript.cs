@@ -13,10 +13,10 @@ public class SwitchScript : MonoBehaviour {
 
 	public void Toggle() {
 		if (door.open) {
-			animator.SetBool ("Up", false);
+			animator.Play ("Lever to Up");
 			door.open = false;
 		} else {
-			animator.SetBool ("Up", true);
+			animator.Play ("Lever to Down");
 			door.open = true;
 		}
 	}
