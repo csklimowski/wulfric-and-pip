@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4115329600083706}
   - component: {fileID: 212385643671093752}
+  - component: {fileID: 60991810536135098}
   m_Layer: 0
   m_Name: Foreground4
   m_TagString: Untagged
@@ -34,12 +35,31 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1788534042069200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7911925, y: 1.99, z: 0}
+  m_LocalPosition: {x: -1.5800714, y: 1.0539343, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60991810536135098
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788534042069200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.32, y: 0.16}
+      - {x: -0.32, y: -0.16}
+      - {x: 0.32, y: -0.16}
+      - {x: 0.31870514, y: -0.14812803}
+      - {x: -0.30014062, y: 0.1587052}
 --- !u!212 &212385643671093752
 SpriteRenderer:
   m_ObjectHideFlags: 1

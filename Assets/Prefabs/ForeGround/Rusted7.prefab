@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4569501602758776}
   - component: {fileID: 212500901519243814}
+  - component: {fileID: 60951223292202494}
   m_Layer: 0
   m_Name: Rusted7
   m_TagString: Untagged
@@ -34,12 +35,31 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487140398752036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3904335, y: 4.998867, z: 0}
+  m_LocalPosition: {x: 4.2113757, y: -0.727116, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60951223292202494
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487140398752036}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.32, y: 0.16}
+      - {x: -0.32, y: -0.16}
+      - {x: 0.32, y: -0.16}
+      - {x: 0.3188591, y: -0.1505346}
+      - {x: -0.29878753, y: 0.1588592}
 --- !u!212 &212500901519243814
 SpriteRenderer:
   m_ObjectHideFlags: 1

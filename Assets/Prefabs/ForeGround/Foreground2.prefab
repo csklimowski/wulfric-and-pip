@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4058035133265896}
   - component: {fileID: 212803715424011788}
+  - component: {fileID: 61701519223483646}
   m_Layer: 0
   m_Name: Foreground2
   m_TagString: Untagged
@@ -40,6 +41,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61701519223483646
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1239823297192206}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.32}
 --- !u!212 &212803715424011788
 SpriteRenderer:
   m_ObjectHideFlags: 1
