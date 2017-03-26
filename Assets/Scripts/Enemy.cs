@@ -27,19 +27,17 @@ public class Enemy : MonoBehaviour {
 	IEnumerator fireBullet () {
         while (true)
         {
-            if (knockedOut == false)
-            {
+			if (knockedOut == false) {
 				animator.Play ("Fire");
-				Instantiate(bullet, new Vector3(transform.position.x - 0.2f, transform.position.y - 0.2f), Quaternion.identity);
-            }
-            if(knockedOut == true)
-            {
-                yield return new WaitForSeconds(10);
+				Instantiate (bullet, new Vector3 (transform.position.x - 0.2f, transform.position.y - 0.2f), Quaternion.identity);
+			}
+			if (knockedOut == true) {
+				yield return new WaitForSeconds (4);
 				animator.Play ("Get Up");
 				gameObject.layer = 11;
-                knockedOut = false;
-            }
-            yield return new WaitForSeconds(3);
+				knockedOut = false;
+			}
+			yield return new WaitForSeconds(3);
         }
 	}
 
@@ -55,5 +53,6 @@ public class Enemy : MonoBehaviour {
 
 	public void Die() {
 		animator.Play ("Death");
+		StopCoroutine ("fireBullet");
 	}
 }
