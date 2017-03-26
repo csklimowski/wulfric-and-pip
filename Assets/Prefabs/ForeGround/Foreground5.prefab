@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4368607231045502}
   - component: {fileID: 212522041102734936}
-  - component: {fileID: 61662538729716524}
+  - component: {fileID: 60647178617736512}
   m_Layer: 0
   m_Name: Foreground5
   m_TagString: Untagged
@@ -35,26 +35,31 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1537088084616140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7385678, y: 0.3554235, z: 0}
+  m_LocalPosition: {x: -1.5800714, y: 1.0539343, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61662538729716524
-BoxCollider2D:
+--- !u!60 &60647178617736512
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1537088084616140}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1aeb16e0d11e21d48a282be6a9ffd1b6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.64}
+  m_Points:
+    m_Paths:
+    - - {x: -0.32, y: 0.16}
+      - {x: -0.32, y: -0.16}
+      - {x: 0.32, y: -0.16}
+      - {x: 0.31870514, y: -0.14812803}
+      - {x: -0.30014062, y: 0.1587052}
 --- !u!212 &212522041102734936
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -86,7 +91,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 918f740192a5b2341b704c0ab3b30690, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 717725f7c45c0c640ba49b6016be72a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

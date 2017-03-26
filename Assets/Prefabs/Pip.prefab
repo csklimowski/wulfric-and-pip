@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 0}
+  enemy: {fileID: 0}
 --- !u!212 &212891968398384572
 SpriteRenderer:
   m_ObjectHideFlags: 1
