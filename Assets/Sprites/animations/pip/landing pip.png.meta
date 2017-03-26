@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: f79d260d1de2f1a4a91e8becbba8ea42
-timeCreated: 1490543029
+guid: 98f783b040c29414689b449b7552eb84
+timeCreated: 1490542939
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pip run_0
-    21300002: pip run_1
-    21300004: pip run_2
-    21300006: pip run_3
-    21300008: pip run_4
-    21300010: pip run_5
+    21300000: landing pip_0
+    21300002: landing pip_1
+    21300004: landing pip_2
+    21300006: landing pip_3
+    21300008: landing pip_4
+    21300010: landing pip_5
+    21300012: landing pip_6
+    21300014: landing pip_7
+    21300016: landing pip_8
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -76,78 +79,117 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pip run_0
+      name: landing pip_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 72
-        width: 36
-        height: 36
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pip run_1
+      name: landing pip_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 72
-        width: 36
-        height: 36
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pip run_2
+      name: landing pip_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: landing pip_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 36
-        width: 36
-        height: 36
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pip run_3
+      name: landing pip_4
       rect:
         serializedVersion: 2
-        x: 36
-        y: 36
-        width: 36
-        height: 36
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pip run_4
+      name: landing pip_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: landing pip_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 36
-        height: 36
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pip run_5
+      name: landing pip_7
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 36
-        height: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: landing pip_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
