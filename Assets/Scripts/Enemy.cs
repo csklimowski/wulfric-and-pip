@@ -8,11 +8,15 @@ public class Enemy : MonoBehaviour {
     private BoxCollider2D myCollider;
     public GameObject bullet;
     public bool knockedOut = false;
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator> ();
         StartCoroutine(fireBullet());
+		animator.Play ("Idle");
+		myCollider = GetComponent<BoxCollider2D> ();
 	}
 
     void Update()
@@ -25,11 +29,14 @@ public class Enemy : MonoBehaviour {
         {
             if (knockedOut == false)
             {
-                Instantiate(bullet, transform.position, Quaternion.identity);
+				animator.Play ("Fire");
+				Instantiate(bullet, new Vector3(transform.position.x - 0.2f, transform.position.y - 0.2f), Quaternion.identity);
             }
             if(knockedOut == true)
             {
                 yield return new WaitForSeconds(10);
+				animator.Play ("Get Up");
+				gameObject.layer = 11;
                 knockedOut = false;
             }
             yield return new WaitForSeconds(3);
@@ -40,7 +47,13 @@ public class Enemy : MonoBehaviour {
     {
         if (col.gameObject.tag == "Box")
         {
+			animator.Play ("Hit");
+			gameObject.layer = 10;
             knockedOut = true;
         }
     }
+
+	public void Die() {
+		animator.Play ("Death");
+	}
 }
