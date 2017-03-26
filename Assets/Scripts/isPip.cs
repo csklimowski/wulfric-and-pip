@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class isPip : MonoBehaviour {
 
@@ -29,7 +30,12 @@ public class isPip : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		if (!dead) {
+        if (Input.GetButtonDown("Restart"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (!dead) {
 			if (Input.GetButtonDown ("Pip Stab") && enemy.knockedOut && myCollider.bounds.Intersects (enemy.GetComponent<BoxCollider2D> ().bounds)) {
 				animator.Play ("Attack");
 				enemy.Die ();
