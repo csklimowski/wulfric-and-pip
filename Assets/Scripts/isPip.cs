@@ -6,8 +6,8 @@ public class isPip : MonoBehaviour {
 
     private Rigidbody2D body;
 	private Animator animator;
-    public BoxCollider2D myCollider;
-	public SwitchScript lever;
+    private BoxCollider2D myCollider;
+	public SwitchScript lever, lever2, lever3, lever4;
     public Enemy enemy;
 	public isWulfric wulfric;
     private bool enemyKnockedOut;
@@ -65,10 +65,31 @@ public class isPip : MonoBehaviour {
             {
                 if (myCollider.bounds.Intersects(lever.GetComponent<BoxCollider2D>().bounds))
                 {
-                    lever.door.open = !lever.door.open;
+                    lever.Toggle();
                 }
             }
-		}
+            if (lever2 != null)
+            {
+                if (myCollider.bounds.Intersects(lever2.GetComponent<BoxCollider2D>().bounds))
+                {
+                    lever2.Toggle();
+                }
+            }
+            if (lever3 != null)
+            {
+                if (myCollider.bounds.Intersects(lever3.GetComponent<BoxCollider2D>().bounds))
+                {
+                    lever3.Toggle();
+                }
+            }
+            if (lever4 != null)
+            {
+                if (myCollider.bounds.Intersects(lever4.GetComponent<BoxCollider2D>().bounds))
+                {
+                    lever4.Toggle();
+                }
+            }
+        }
 
 		if (wulfric.pipHeld) {
 			animator.Play ("Hanging");
