@@ -6,9 +6,12 @@ public class SwitchScript : MonoBehaviour {
 
 	public DoorScript door;
 	private Animator animator;
+	private AudioSource myAudio;
+	public AudioClip doorClip, switchClip;
 
 	void Start() {
 		animator = GetComponent<Animator> ();
+		myAudio = GetComponent<AudioSource> ();
 	}
 
 	public void Toggle() {
@@ -19,5 +22,7 @@ public class SwitchScript : MonoBehaviour {
 			animator.Play ("Lever to Down");
 			door.open = true;
 		}
+		myAudio.PlayOneShot (switchClip);
+		myAudio.PlayOneShot (doorClip);
 	}
 }

@@ -13,6 +13,8 @@ public class isPip : MonoBehaviour {
 	public isWulfric wulfric;
     private bool enemyKnockedOut;
 	public bool dead;
+	private AudioSource myAudio;
+	public AudioClip slash, death;
 
     // Use this for initialization
     void Start()
@@ -22,6 +24,7 @@ public class isPip : MonoBehaviour {
         myCollider = GetComponent<BoxCollider2D>();
 		animator.Play ("Idle");
 		dead = false;
+		myAudio = GetComponent<AudioSource> ();
     }
 
 	bool IsCurrentAnim(string str) {
@@ -37,6 +40,7 @@ public class isPip : MonoBehaviour {
 
         if (!dead) {
 			if (Input.GetButtonDown ("Pip Stab") && enemy.knockedOut && myCollider.bounds.Intersects (enemy.GetComponent<BoxCollider2D> ().bounds)) {
+				myAudio.PlayOneShot (slash);
 				animator.Play ("Attack");
 				enemy.Die ();
 			}
@@ -126,6 +130,7 @@ public class isPip : MonoBehaviour {
         if(col.gameObject.tag == "Bullet")
         {
 			animator.Play ("Death");
+			myAudio.PlayOneShot (death);
 			dead = true;
         }
     }

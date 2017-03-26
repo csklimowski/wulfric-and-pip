@@ -10,11 +10,14 @@ public class Enemy : MonoBehaviour {
     public bool knockedOut = false;
 	private Animator animator;
 	public bool dead;
+	private AudioSource myAudio;
+	public AudioClip gunshot;
 
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator> ();
+		myAudio = GetComponent<AudioSource> ();
         StartCoroutine(fireBullet());
 		animator.Play ("Idle");
 		myCollider = GetComponent<BoxCollider2D> ();
@@ -33,6 +36,7 @@ public class Enemy : MonoBehaviour {
 				if (knockedOut == false) {
 					animator.Play ("Fire");
 					Instantiate (bullet, new Vector3 (transform.position.x - 0.2f, transform.position.y - 0.2f), Quaternion.identity);
+					myAudio.Play ();
 				}
 				if (knockedOut == true) {
 					yield return new WaitForSeconds (4);
