@@ -405,6 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313151078}
   - component: {fileID: 313151077}
+  - component: {fileID: 313151079}
   m_Layer: 0
   m_Name: Exit Edge
   m_TagString: Untagged
@@ -440,6 +441,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &313151079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313151076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ccf148364576a4c9d5ecb265ad6e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &382809896 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4193188652600610, guid: f499bbede4f46ba4abb4e0babab5ccde,

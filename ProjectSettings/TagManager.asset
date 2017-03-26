@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - fan
   - kill
+  - Door
   layers:
   - Default
   - TransparentFX
