@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: cfe2d1916188de84990ce199464e874c
-timeCreated: 1490499485
+guid: b4f88091771b4d4478d966e8c305059f
+timeCreated: 1490499388
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Walking Roulfrick (2)_0
-    21300002: Walking Roulfrick (2)_1
-    21300004: Walking Roulfrick (2)_2
-    21300006: Walking Roulfrick (2)_3
-    21300008: Walking Roulfrick (2)_4
-    21300010: Walking Roulfrick (2)_5
+    21300000: transition_0
+    21300002: transition_1
+    21300004: transition_2
+    21300006: transition_3
+    21300008: transition_4
+    21300010: transition_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -76,7 +76,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_0
+      name: transition_0
       rect:
         serializedVersion: 2
         x: 0
@@ -89,7 +89,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_1
+      name: transition_1
       rect:
         serializedVersion: 2
         x: 64
@@ -102,7 +102,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_2
+      name: transition_2
       rect:
         serializedVersion: 2
         x: 0
@@ -115,7 +115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_3
+      name: transition_3
       rect:
         serializedVersion: 2
         x: 64
@@ -128,7 +128,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_4
+      name: transition_4
       rect:
         serializedVersion: 2
         x: 0
@@ -141,7 +141,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walking Roulfrick (2)_5
+      name: transition_5
       rect:
         serializedVersion: 2
         x: 64
