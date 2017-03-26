@@ -65,7 +65,7 @@ public class isPip : MonoBehaviour {
             {
                 if (myCollider.bounds.Intersects(lever.GetComponent<BoxCollider2D>().bounds))
                 {
-                    lever.Toggle();
+					lever.Toggle ();
                 }
             }
             if (lever2 != null)
