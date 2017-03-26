@@ -5,15 +5,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     private Rigidbody2D body;
-    private BoxCollider2D collision;
+    private BoxCollider2D myCollider;
     public GameObject bullet;
-    private bool knockedOut = false;
+    public bool knockedOut = false;
 
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
         StartCoroutine(fireBullet());
 	}
+
+    void Update()
+    {
+        
+    }
 	
 	IEnumerator fireBullet () {
         while (true)
@@ -36,10 +41,6 @@ public class Enemy : MonoBehaviour {
         if (col.gameObject.tag == "Box")
         {
             knockedOut = true;
-        }
-        if (col.gameObject.tag == "Pip")
-        {
-            DestroyObject(gameObject);
         }
     }
 }

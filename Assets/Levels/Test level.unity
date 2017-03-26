@@ -150,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519846627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -4.04, z: 0}
+  m_LocalPosition: {x: 0, y: -3.96, z: 0}
   m_LocalScale: {x: 20, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
@@ -421,6 +421,11 @@ Prefab:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114702339589987536, guid: 569aa0cc718b7c244ac8b92ede49dbff,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1992795653}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 569aa0cc718b7c244ac8b92ede49dbff, type: 2}
   m_IsPrefabParent: 0
@@ -684,3 +689,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &1992795653 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114584623618383988, guid: a81918fb87cd38642877106c0a596eb1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1106930670}
+  m_Script: {fileID: 11500000, guid: b9fc28fabad4ec04aaac6cf3e450c687, type: 3}
