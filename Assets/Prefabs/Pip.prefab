@@ -88,6 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98138410c5148ad49bce124547e60169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCollider: {fileID: 61644248922252810}
   lever: {fileID: 0}
   enemy: {fileID: 0}
 --- !u!212 &212891968398384572
