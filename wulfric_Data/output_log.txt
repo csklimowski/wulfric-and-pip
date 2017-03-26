@@ -1,0 +1,47 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   21.20.16.4542
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.163 seconds
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\cskli\Desktop\wulfric-and-pip\wulfric_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.644255 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.272573 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 681.
+Total: 0.863207 ms (FindLiveObjects: 0.036319 ms CreateObjectMapping: 0.021157 ms MarkObjects: 0.106137 ms  DeleteObjects: 0.699240 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.425256 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 681.
+Total: 0.370953 ms (FindLiveObjects: 0.092033 ms CreateObjectMapping: 0.039140 ms MarkObjects: 0.229906 ms  DeleteObjects: 0.008110 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.400573 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 681.
+Total: 0.306777 ms (FindLiveObjects: 0.075812 ms CreateObjectMapping: 0.071933 ms MarkObjects: 0.152330 ms  DeleteObjects: 0.005289 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1e78 -> priority: 1 
