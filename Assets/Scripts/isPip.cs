@@ -5,7 +5,7 @@ using UnityEngine;
 public class isPip : MonoBehaviour {
 
     private Rigidbody2D body;
-    private BoxCollider2D myCollider;
+    public BoxCollider2D myCollider;
 	public SwitchScript lever;
     public Enemy enemy;
     private bool enemyKnockedOut;
@@ -43,18 +43,6 @@ public class isPip : MonoBehaviour {
                 }
             }
 		}
-
-        if (Input.GetButtonDown("Pip Stab"))
-        {
-            if (myCollider.bounds.Intersects(enemy.GetComponent<BoxCollider2D>().bounds))
-            {
-                enemyKnockedOut = enemy.knockedOut;
-                if (enemyKnockedOut == true)
-                {
-                    DestroyObject(enemy.gameObject);
-                }
-            }
-        }
     }
 
     void OnTriggerEnter2D(Collider2D col)

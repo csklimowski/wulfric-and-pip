@@ -106,10 +106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758ada307711689429727cae991bc427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCollider: {fileID: 61185999463239588}
   holding: {fileID: 0}
-  box: {fileID: 0}
-  pip: {fileID: 0}
-  lever: {fileID: 0}
+  box: {fileID: 1173161069794878, guid: b8366f7af5f278b4d89a79c5b7b80b24, type: 2}
+  pip: {fileID: 1481405666653534, guid: af43a2dc5664d714ab45e62b9bfe3f3f, type: 2}
+  lever: {fileID: 114445268810103464, guid: 3115e4c5a3973dc45856b7c6cba215f8, type: 2}
 --- !u!212 &212008102436340804
 SpriteRenderer:
   m_ObjectHideFlags: 1
