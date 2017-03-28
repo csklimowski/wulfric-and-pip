@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody2D>();
-        body.velocity += new Vector2(-6, 0);
+        body.velocity += new Vector2(-16, 0);
     }
 
     void Update ()
