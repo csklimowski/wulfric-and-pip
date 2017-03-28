@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class stars : MonoBehaviour {
-	public float targetTime = 2f;
+	public float targetTime = 4f;
 	public float speed = 5f;
 	private bool upperino = false;
 
@@ -17,7 +17,7 @@ public class stars : MonoBehaviour {
 		targetTime -= Time.deltaTime;
 		if (targetTime <= 0) {
 			upperino = true;
-			targetTime = 2f;
+			targetTime = 4f;
 		}
 		if (upperino == true) {
 			transform.Translate (2,0,0);
