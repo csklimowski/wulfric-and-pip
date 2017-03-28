@@ -12,10 +12,14 @@ public class StartMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Wulfric Jump") || Input.GetButtonDown("Pip Jump"))
+        if (Input.GetKeyDown(KeyCode.Space))
             {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Application.Quit();
+        }
     }
 }

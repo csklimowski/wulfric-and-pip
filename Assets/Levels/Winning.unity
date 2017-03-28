@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 2001508220}
   - component: {fileID: 2001508219}
   - component: {fileID: 2001508221}
+  - component: {fileID: 2001508222}
   m_Layer: 0
   m_Name: win screen
   m_TagString: Untagged
@@ -323,3 +324,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2001508222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001508218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758ada307711689429727cae991bc427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holding: {fileID: 0}
+  box: {fileID: 0}
+  pip: {fileID: 0}
+  lever: {fileID: 0}
+  lever2: {fileID: 0}
+  lever3: {fileID: 0}
+  lever4: {fileID: 0}
+  pipHeld: 0
+  grunt: {fileID: 0}
+  land: {fileID: 0}
