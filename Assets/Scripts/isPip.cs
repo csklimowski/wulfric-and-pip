@@ -14,7 +14,10 @@ public class isPip : MonoBehaviour {
     private bool enemyKnockedOut;
 	public bool dead;
 	private AudioSource myAudio;
-	public AudioClip slash, death;
+	public AudioClip slash, death, death2;
+	public float targetTime = 2f;
+	public bool upperino;
+	private bool timer = false;
 
     // Use this for initialization
     void Start()
@@ -25,6 +28,7 @@ public class isPip : MonoBehaviour {
 		animator.Play ("Idle");
 		dead = false;
 		myAudio = GetComponent<AudioSource> ();
+		timer = false;
     }
 
 	bool IsCurrentAnim(string str) {
@@ -113,6 +117,19 @@ public class isPip : MonoBehaviour {
 				animator.Play ("Rising");
 			}
 		}
+		if (timer == true) {
+			targetTime -= Time.deltaTime;
+		}
+
+		if (targetTime <= 0) {
+			upperino = true;
+		}
+		if (upperino == true) {
+			myAudio.PlayOneShot (death);
+			upperino = false;
+			timer = false;
+			targetTime = 3f;
+		}
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -130,9 +147,12 @@ public class isPip : MonoBehaviour {
         if(col.gameObject.tag == "Bullet")
         {
 			animator.Play ("Death");
-			myAudio.PlayOneShot (death);
+			myAudio.PlayOneShot (death2);
 			dead = true;
+			timer = true;
         }
+
+
     }
     
     void OnTriggerExit2D(Collider2D col)

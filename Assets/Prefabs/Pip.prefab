@@ -146,7 +146,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -196,6 +196,9 @@ MonoBehaviour:
   dead: 0
   slash: {fileID: 8300000, guid: e14208a4c4d8cb64f9acc52d82ed3bd6, type: 3}
   death: {fileID: 8300000, guid: c4592785eba83eb41b782bb81500fdc1, type: 3}
+  death2: {fileID: 8300000, guid: bb02e6cd8f0323b4fabfcfaebf6f1549, type: 3}
+  targetTime: 10
+  upperino: 0
 --- !u!212 &212888051112308194
 SpriteRenderer:
   m_ObjectHideFlags: 1

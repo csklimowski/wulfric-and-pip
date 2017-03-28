@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour {
 	public bool dead;
 	private AudioSource myAudio;
 	public AudioClip gunshot;
+	private static bool stopshooting = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,10 @@ public class Enemy : MonoBehaviour {
 
     void Update()
     {
+		stopshooting = isPip.dead;
+		if (stopshooting == true) {
+			dead = true;
+		}
         
     }
 	
