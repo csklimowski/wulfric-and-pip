@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4546556359691884}
   - component: {fileID: 212457035153618102}
-  - component: {fileID: 60035525382150132}
   m_Layer: 0
   m_Name: Rusted5
   m_TagString: Untagged
@@ -41,25 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60035525382150132
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001857747715268}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 1aeb16e0d11e21d48a282be6a9ffd1b6, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.16, y: 0.16}
-      - {x: -0.16, y: -0.16}
-      - {x: 0.16, y: -0.16}
-      - {x: 0.15741023, y: -0.14683317}
-      - {x: -0.14942288, y: 0.15870512}
 --- !u!212 &212457035153618102
 SpriteRenderer:
   m_ObjectHideFlags: 1
