@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour {
 	private AudioSource myAudio;
 	public AudioClip gunshot;
 	private static bool stopshooting = false;
+	public GameObject Pip;
+	public isPip script;
 
 	// Use this for initialization
 	void Start () {
@@ -23,11 +25,13 @@ public class Enemy : MonoBehaviour {
 		animator.Play ("Idle");
 		myCollider = GetComponent<BoxCollider2D> ();
 		dead = false;
+		script = Pip.GetComponent<isPip> ();
 	}
 
     void Update()
     {
-		stopshooting = isPip.dead;
+		stopshooting = GameObject.Find("Pip").GetComponent<isPip>().dead;
+
 		if (stopshooting == true) {
 			dead = true;
 		}

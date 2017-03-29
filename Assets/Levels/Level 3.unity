@@ -1359,6 +1359,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &560856011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560856008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbeed71298f6d8a48a35fbe9f2fdf804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &588272398
 Prefab:
   m_ObjectHideFlags: 0
@@ -2578,7 +2589,7 @@ Prefab:
     - target: {fileID: 114479599727190696, guid: af43a2dc5664d714ab45e62b9bfe3f3f,
         type: 2}
       propertyPath: targetTime
-      value: 3
+      value: 3.35
       objectReference: {fileID: 0}
     - target: {fileID: 114479599727190696, guid: af43a2dc5664d714ab45e62b9bfe3f3f,
         type: 2}
@@ -2589,6 +2600,11 @@ Prefab:
         type: 2}
       propertyPath: timer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114479599727190696, guid: af43a2dc5664d714ab45e62b9bfe3f3f,
+        type: 2}
+      propertyPath: dead
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af43a2dc5664d714ab45e62b9bfe3f3f, type: 2}

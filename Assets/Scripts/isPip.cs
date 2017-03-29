@@ -123,6 +123,7 @@ public class isPip : MonoBehaviour {
 
 		if (targetTime <= 0) {
 			upperino = true;
+		
 		}
 		if (upperino == true) {
 			myAudio.PlayOneShot (death);
